@@ -242,6 +242,8 @@ Package-specific changes not released in any SDK will be added here just before 
 
 ### 🐛 Bug fixes
 
+- **`expo-router`**
+  - [iOS] Fix `selectedStyle` on `NativeTabs.Trigger.Label` not applying color on iPad elevated tab bar sidebar. ([#43660](https://github.com/expo/expo/issues/43660))
 - **`expo-web-browser`**
   - Fixed `openAuthSessionAsync` silently failing on iOS 17.4+ when using `https://` redirect URLs without Associated Domains entitlements. The HTTPS universal link callback API is now opt-in via the `preferUniversalLinks` option. ([#44452](https://github.com/expo/expo/pull/44452) by [@vonovak](https://github.com/vonovak))
   - Fix an ES module import error in the typed config plugin. ([#46089](https://github.com/expo/expo/pull/46089) by [@zoontek](https://github.com/zoontek))
